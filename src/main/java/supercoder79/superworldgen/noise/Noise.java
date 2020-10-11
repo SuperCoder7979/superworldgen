@@ -1,5 +1,8 @@
 package supercoder79.superworldgen.noise;
 
+import supercoder79.superworldgen.function.NoiseSampler2D;
+import supercoder79.superworldgen.function.NoiseSampler3D;
+
 /**
  * A class that can create 2d and 3d noise.
  * You *MUST* have at least one constructor in your implementation that takes in only a seed,
@@ -7,7 +10,7 @@ package supercoder79.superworldgen.noise;
  *
  * @author SuperCoder79
  */
-public abstract class Noise {
+public abstract class Noise implements NoiseSampler2D, NoiseSampler3D {
 	public Noise(long seed) {
 	}
 
