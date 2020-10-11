@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "superworldgen",
+  "version": "${version}",
+  "name": "SuperWorldGen",
+  "description": "A collection of utilities to make creating world gen mods easier.",
+  "authors": [
+    "SuperCoder79"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/superworldgen/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "supercoder79.superworldgen.SuperWorldGen"
+    ]
+  },
+  "mixins": [
+    "superworldgen.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.1+build.209",
+    "fabric": "*",
+    "minecraft": "1.16.3"
+  }
+}
